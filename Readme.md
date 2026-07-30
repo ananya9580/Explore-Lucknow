@@ -17,9 +17,8 @@ Discover the rich culture, heritage, and modern attractions of Lucknow through t
 This project is designed to highlight the beauty of Lucknow while practicing frontend development skills.
 
 ## 🌐 Live Demo
-[Click here to view]
+[Click here to view] https://ananya9580.github.io/Explore-Lucknow/
 
 ## ⚡ How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/explore-lucknow.git
+1. Clone the repository-https://github.com/ananya9580/Explore-Lucknow/
+
