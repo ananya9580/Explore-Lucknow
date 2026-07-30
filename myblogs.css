@@ -1,0 +1,304 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Global Styling
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    width:100%;
+    height:80px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#ff6b35;
+    font-size:28px;
+}
+
+.logo h2{
+    color:#1b4332;
+}
+
+.navbar ul{
+    display:flex;
+    gap:30px;
+}
+
+.navbar ul li a{
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#ff6b35;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+    height:350px;
+    margin-top:80px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("../images/destinations/bara-imambara.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+/* ===========================
+   Blog Section
+=========================== */
+
+.blog{
+    width:85%;
+    margin:60px auto;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.blog img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:35px;
+}
+
+.blog-content h2{
+    color:#1b4332;
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.blog-content h3{
+    color:#ff6b35;
+    margin:25px 0 15px;
+}
+
+.blog-content p{
+    margin-bottom:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+.blog-content ul{
+    margin-left:20px;
+    list-style:disc;
+}
+
+.blog-content ul li{
+    margin-bottom:10px;
+    color:#555;
+}
+
+/* ===========================
+   Comments
+=========================== */
+
+.comments{
+    width:85%;
+    margin:50px auto;
+}
+
+.comments h2{
+    color:#1b4332;
+    margin-bottom:30px;
+    text-align:center;
+    font-size:35px;
+}
+
+.comment{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:5px solid #ff6b35;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.comment h4{
+    color:#1b4332;
+    margin-bottom:10px;
+}
+
+.comment p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* ===========================
+   Comment Form
+=========================== */
+
+.comment-form{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    margin-top:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.comment-form h3{
+    color:#1b4332;
+    margin-bottom:20px;
+}
+
+.comment-form textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    resize:none;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.comment-form textarea:focus{
+    outline:none;
+    border:2px solid #ff6b35;
+}
+
+.comment-form button{
+    padding:12px 30px;
+    background:#ff6b35;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.comment-form button:hover{
+    background:#e65a27;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#1b4332;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:60px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+footer p{
+    margin:8px 0;
+    color:#ddd;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .blog{
+        width:95%;
+    }
+
+    .blog img{
+        height:250px;
+    }
+
+    .comments{
+        width:95%;
+    }
+}
